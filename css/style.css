@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?k09pi3');
-  src:  url('fonts/icomoon.eot?k09pi3#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?k09pi3') format('truetype'),
-    url('fonts/icomoon.woff?k09pi3') format('woff'),
-    url('fonts/icomoon.svg?k09pi3#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?1hcbff');
+  src:  url('fonts/icomoon.eot?1hcbff#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?1hcbff') format('truetype'),
+    url('fonts/icomoon.woff?1hcbff') format('woff'),
+    url('fonts/icomoon.svg?1hcbff#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,42 +24,81 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-home:before {
-  content: "\e900";
+.icon-home2:before {
+  content: "\e901";
 }
 .icon-camera:before {
   content: "\e90f";
 }
-.icon-film:before {
-  content: "\e913";
-}
-.icon-book:before {
-  content: "\e91f";
-}
-.icon-file-text:before {
-  content: "\e922";
+.icon-library:before {
+  content: "\e921";
 }
 .icon-folder-open:before {
   content: "\e930";
 }
-.icon-users:before {
-  content: "\e972";
+.icon-envelop:before {
+  content: "\e945";
 }
-.icon-mail4:before {
-  content: "\ea86";
+.icon-terminal:before {
+  content: "\ea81";
 }
-.icon-google-plus2:before {
-  content: "\ea8c";
+.icon-google-plus:before {
+  content: "\ea8b";
 }
 .icon-google-drive:before {
   content: "\ea8f";
 }
-.icon-facebook2:before {
-  content: "\ea91";
+.icon-facebook:before {
+  content: "\ea90";
 }
 .icon-instagram:before {
   content: "\ea92";
 }
 .icon-whatsapp:before {
   content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-rss:before {
+  content: "\ea9b";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-tux:before {
+  content: "\eabd";
+}
+.icon-android:before {
+  content: "\eac0";
+}
+.icon-windows8:before {
+  content: "\eac2";
+}
+.icon-soundcloud:before {
+  content: "\eac3";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-pinterest2:before {
+  content: "\ead2";
+}
+.icon-file-pdf:before {
+  content: "\eadf";
+}
+.icon-html-five2:before {
+  content: "\eae5";
+}
+.icon-css3:before {
+  content: "\eae6";
+}
+.icon-git:before {
+  content: "\eae7";
+}
+.icon-codepen:before {
+  content: "\eae8";
 }
