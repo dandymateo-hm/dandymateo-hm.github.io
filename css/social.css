@@ -1,0 +1,82 @@
+.social-bar {
+    position: fixed;
+    /* Hacemos que la posición en pantalla sea fija para que siempre se muestre*/
+    right: 0;
+    /*Lo ponemos a la derecha de nuestra pantalla*/
+    top: 25%;
+    /*Lo posicionamos casi al centro*/
+    font-size: 1.5rem;
+    display: flex;
+    /*Aplicamos la propiedad flex*/
+    flex-direction: column;
+    /*Cambiamos el flujo que viene por defecto*/
+    align-items: flex-end;
+    /*Alineamos hacia la parte inferior*/
+    z-index: 100;
+    /*Ubicamos la barra por encima del resto de los elementos*/
+}
+
+
+/*Propiedades generales a la clase icon*/
+
+.icon {
+    color: white;
+    text-decoration: none;
+    padding: .7rem;
+    display: flex;
+    transition: all .5s;
+}
+
+
+/*Establecemos los background de cada elemento aprovechando su class*/
+
+.icon-facebook {
+    background: #3b5998;
+}
+
+.icon-twitter {
+    background: #55acee;
+}
+
+.icon-youtube {
+    background: #bb0000;
+}
+
+.icon-google-plus {
+    background: #dd4b39;
+}
+
+.icon-instagram {
+    background: #125688;
+}
+
+.icon-pinterest2 {
+    background: #cb2027;
+}
+
+.icon-rss {
+    background: #ff6600;
+}
+
+.icon-envelop {
+    background: rgb(94, 94, 94);
+}
+
+.icon:first-child {
+    border-radius: 1rem 0 0 0;
+    /*Agregamos un borde redondeado al primer elemento*/
+}
+
+.icon:last-child {
+    border-radius: 0 0 0 1rem;
+    /*Agregamos un borde redondeado al último elemento*/
+}
+
+
+/*Al pasar el mouse lograremos que se apliquen las siguientes propiedades*/
+
+.icon:hover {
+    padding-right: 3rem;
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
