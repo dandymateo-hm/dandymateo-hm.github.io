@@ -8,6 +8,9 @@
     <title>Ganaderia</title>
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -232,17 +235,111 @@
         <div class="w3-container w3-black">
             <h1>INDUSTRIA GANADERA</h1>
         </div>
-        <div class="w3-content w3-display-container">
-            <img class="mySlides" src="images/ganado1.jpg" style="width:100%;height:500px">
-            <img class="mySlides" src="images/ovino1.jpg" style="width:100%;height:500px">
-            <img class="mySlides" src="images/porcinos1.jpg" style="width:100%;height:500px">
-            <img class="mySlides" src="images/aves1.jpg" style="width:100%;height:500px">
-            <img class="mySlides" src="images/asnos1.jpg" style="width:100%;height:500px">
-            <img class="mySlides" src="images/ganado2.jpg" style="width:100%;height:500px">
-            <img class="mySlides" src="images/conejo1.jpg" style="width:100%;height:500px">
-            <img class="mySlides" src="images/toro2.jpg" style="width:100%;height:500px">
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/piecria1.jpg" alt="Ganadería en Pie de Cria" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Ganadería en Pie de Cria</h3>
+
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Más Información!</button>
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <p class="texto">
+                                        Este es un término aplicado en gran medida en aquellos profesionales de la práctica de la ganadería de cualquier tipo, bien sea bovino, porcino, avícola, entre otros; sin embargo entre muchos existe confusión en cuanto a su significado, algunos lo aplican
+                                        para referirse al semental o macho alfa de la manada, otros indican que es el nombre otorgado al macho que posee más años dentro de ese corral como el gallo o toro más viejo, entre los machos que se encuentran en
+                                        el rebaño y otros indican que el ganado pie de cría es la forma en la cual se cría al animal.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/engorde1.jpg" alt="Ganadería de engorde" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Ganadería de engorde</h3>
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Más Información!</button>
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <p class="texto">
+                                        Ahora se pueden levantar en corto tiempo y en pequeños espacios novillos de carne baja en grasa. El sistema de ganadería semiestabulada así se llama este modelo de produción bovina- se puede tener en apenas tres hectáreas, de las cuales dos y media se
+                                        destinan a sembrar el alimento para el ganado y una media para mantenerlos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/lechero1.jpg" alt="Ganado Lechero" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Ganado Lechero</h3>
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Más Información!</button>
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <p class="texto">
+                                        Ganado lechero es el nombre otorgado a los animales mamíferos que son de fácil domesticación pertenecientes a la familia Bóvidos, estos poseen una gran importancia en la vida humana, ya que su cría nos provee de muchos beneficios comerciales, tales como:
+                                        la carne, cuero y la más común leche. Las razas lecheras más consumidas en el mercado son provenientes de la población vacuna o bovina, entre las más destacadas se encuentran: Jersey (UK), Holstein (Holanda), Guernsey
+                                        (UK) y Ayrshire (Escocia); estas especies poseen un origen europeo, siendo los mejores ejemplares de ganado lechero en el mundo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/extensiva1.jpg" alt="Ganaderia extensiva" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Ganadería Extensiva</h3>
+                        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Más Información!</button>
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                    <p class="texto">
+                                        La ganaderı́a extensiva es el conjunto de sistemas de producción ganadera que aprovechan eficientemente los recursos del territorio con las especies y razas adecuadas, compatibilizando la producción con la sostenibilidad y generando servicios ambientales
+                                        y sociales. Contempla aspectos clave como la utilización de razas autóctonas, la movilidad del ganado, el bienestar animal o el manejo ajustado a la disponibilidad espacial y temporal de los recursos disponibles
+                                        en cada zona. Esta actividad es esencial para el territorio y la sociedad, ya que no solo genera productos de calidad, sino también configura el paisaje, ayuda a controlar los incendios forestales, regula los
+                                        ciclos del agua y la calidad del suelo, ayuda a potenciar la biodiversidad y a conservar el patrimonio cultural y la identidad territorial.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
 
     </section>
