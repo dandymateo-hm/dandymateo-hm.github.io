@@ -35,6 +35,25 @@
     background-color: brown;
 }
 
+.bienvenida {
+    color: whitesmoke;
+    position: absolute;
+    /* Hacemos que la posición en pantalla sea fija para que siempre se muestre*/
+    right: 50%;
+    /*Lo ponemos a la derecha de nuestra pantalla*/
+    top: 10px;
+    /*Lo posicionamos casi al centro*/
+    font-size: 1.5rem;
+    display: flex;
+    /*Aplicamos la propiedad flex*/
+    flex-direction: column;
+    /*Cambiamos el flujo que viene por defecto*/
+    align-items: center;
+    /*Alineamos hacia la parte inferior*/
+    z-index: 100;
+    /*Ubicamos la barra por encima del resto de los elementos*/
+}
+
 .social-bar {
     position: absolute;
     /* Hacemos que la posición en pantalla sea fija para que siempre se muestre*/
