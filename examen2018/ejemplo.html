@@ -1,0 +1,41 @@
+<head>
+    <style>
+        /*body {
+            box-sizing: content-box;
+        }*/
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1 id="titulo">El presidente ...</h1>
+        <time id="tiempo" datetime="2018-07-03">Hace 1 hora</time>
+        <p id="contenido">El presidente se fue al carajo vendiendo nuestro mar.</p>
+        <img id="imagen" src="images/telepizza.jpg">
+    </article>
+
+    <br><br><br>
+    <a id="enlace" href="#">Cambiar</a>
+
+    <script>
+        function cambiar(evento) {
+            evento.preventDefault()
+
+            var titulo = document.getElementById('titulo')
+            titulo.innerHTML = 'La presidenta...'
+
+            var tiempo = document.getElementById('tiempo')
+            tiempo.innerHTML = 'Hace 2 días'
+            tiempo.dateTime = '2018-07-01'
+
+            var contenido = document.getElementById('contenido')
+            contenido.innerHTML = 'Este texto es <strong>importante</strong>...'
+
+            var imagen = document.getElementById('imagen')
+            imagen.src = 'images/telepizza.jpg'
+        }
+
+        var enlace = document.getElementById('enlace')
+        enlace.onclick = cambiar
+    </script>
+</body>
