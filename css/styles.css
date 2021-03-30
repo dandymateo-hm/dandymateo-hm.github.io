@@ -10543,7 +10543,7 @@ section.resume-header {
   display: flex;
   align-items: center;
   padding: 1rem 1rem 5rem 5rem;
-  max-width: 100%;
+  max-width: 75rem;
   background-size: cover;
 }
 
